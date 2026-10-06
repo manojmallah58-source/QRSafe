@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Safe | QR Code Awareness & Safe QR Usage</title>
+    <title>QR Safe | QR Code Awareness & Safe QR Usage (TY B.Sc. IT Sem 5 CEP)</title>
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
@@ -19,7 +19,7 @@
             <i class="fa-solid fa-qrcode app-logo-icon"></i>
             <div>
                 <h1>QR Safe</h1>
-                <p>TY B.Sc. IT | Sem 5 CEP Project</p>
+                <p>TY B.Sc. IT | Sem 5 | CEP (2026–2027)</p>
             </div>
         </div>
         <div class="topbar-actions">
@@ -33,7 +33,7 @@
         <!-- 1. HOME SECTION -->
         <section id="home" class="content-section active">
             <div class="hero-card">
-                <div class="hero-badge"><i class="fa-solid fa-shield-halved"></i> CEP Initiative (2026-2027)</div>
+                <div class="hero-badge"><i class="fa-solid fa-shield-halved"></i> Community Engagement Project (2026–2027)</div>
                 <h2>Scan Smart. Pay Safe.</h2>
                 <p>Learn how to identify suspicious QR codes, avoid QR scams and make safer digital payments.</p>
                 
@@ -42,7 +42,7 @@
                 </div>
 
                 <div class="hero-quick-tips">
-                    <div class="tip-pill"><i class="fa-solid fa-check"></i> Check the source</div>
+                    <div class="tip-pill"><i class="fa-solid fa-check"></i> Check source</div>
                     <div class="tip-pill"><i class="fa-solid fa-check"></i> Inspect stickers</div>
                     <div class="tip-pill"><i class="fa-solid fa-check"></i> Verify amount</div>
                 </div>
@@ -50,10 +50,18 @@
 
             <div class="section-heading">
                 <h3>Quick Navigation</h3>
-                <p>Explore the awareness modules</p>
+                <p>Explore awareness modules & project details</p>
             </div>
 
             <div class="quick-grid">
+                <button class="nav-card" onclick="switchSection('about-project')">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>About Project</span>
+                </button>
+                <button class="nav-card" onclick="switchSection('objectives')">
+                    <i class="fa-solid fa-bullseye"></i>
+                    <span>Objectives</span>
+                </button>
                 <button class="nav-card" onclick="switchSection('basics')">
                     <i class="fa-solid fa-book-open"></i>
                     <span>QR Basics</span>
@@ -72,12 +80,122 @@
                 </button>
                 <button class="nav-card" onclick="switchSection('warnings')">
                     <i class="fa-solid fa-triangle-exclamation"></i>
-                    <span>Warning Signs</span>
+                    <span>Warnings</span>
                 </button>
                 <button class="nav-card" onclick="switchSection('quiz')">
                     <i class="fa-solid fa-brain"></i>
                     <span>Safety Quiz</span>
                 </button>
+                <button class="nav-card" onclick="switchSection('community')">
+                    <i class="fa-solid fa-users-rectangle"></i>
+                    <span>CEP Details</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- ABOUT THIS PROJECT SECTION -->
+        <section id="about-project" class="content-section">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-circle-info"></i> About This Project</h2>
+                <p>TY B.Sc. IT Community Engagement Project</p>
+            </div>
+
+            <div class="card">
+                <h3>Overview & Purpose</h3>
+                <p>Quick Response (QR) codes have become an integral part of modern life, offering seamless access to websites, digital menus, tickets, and financial transactions. However, their growing popularity has made them a prime target for cybercriminals.</p>
+                <p>This Community Engagement Project (CEP), titled <strong>“QR Code Awareness and Safe QR Usage”</strong>, aims to educate college students, local residents, senior citizens, and general smartphone users about secure QR practices, preventing quishing (QR phishing), and avoiding digital payment frauds.</p>
+            </div>
+
+            <div class="card">
+                <h3>Why QR Safety Matters</h3>
+                <p>A QR code is merely a visual gateway to data (usually a URL). Because human eyes cannot read the encoded destination before scanning, attackers exploit blind trust to redirect users to malicious phishing portals or fraudulent payment collection workflows. Through simple guides and interactive tools, this platform bridges the digital literacy gap.</p>
+            </div>
+        </section>
+
+        <!-- PROJECT OBJECTIVES SECTION -->
+        <section id="objectives" class="content-section">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-bullseye"></i> Project Objectives</h2>
+                <p>Core goals of the CEP initiative</p>
+            </div>
+
+            <div class="card">
+                <ul class="bullet-list">
+                    <li><i class="fa-solid fa-check-circle"></i> Create fundamental awareness about QR code technology and usage.</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Explain common QR-related cyber scams and attack vectors.</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Educate users on identifying fake payment QR codes and tampered stickers.</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Explain QR phishing and "quishing" mechanisms.</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Teach practical destination URL verification techniques.</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Promote safe, vigilant digital payment habits.</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Reiterate the absolute rule: Never share OTP or UPI PIN.</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Teach users to recognize warning signs and red flags.</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Foster responsible digital behavior across community groups.</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Conduct structured community awareness drives and sessions.</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Collect community feedback through awareness surveys.</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Analyze awareness improvement using empirical survey data.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- TARGET COMMUNITY SECTION -->
+        <section id="target-community" class="content-section">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-people-group"></i> Target Community</h2>
+                <p>Audience groups addressed in this project</p>
+            </div>
+
+            <div class="card">
+                <h3>Key Demographics</h3>
+                <ul class="bullet-list">
+                    <li><i class="fa-solid fa-user-graduate"></i> <strong>College Students:</strong> High users of digital apps, vulnerable to online reward scams.</li>
+                    <li><i class="fa-solid fa-user-tie"></i> <strong>Parents & Working Professionals:</strong> Frequent users of online banking and utility QR payments.</li>
+                    <li><i class="fa-solid fa-person-cane"></i> <strong>Senior Citizens:</strong> Highly vulnerable to financial fraud due to limited digital literacy.</li>
+                    <li><i class="fa-solid fa-store"></i> <strong>Small Shop Owners:</strong> Dependent on merchant QR codes; vulnerable to physical tampering.</li>
+                    <li><i class="fa-solid fa-mobile-screen"></i> <strong>General Smartphone Users:</strong> Broad community members interacting with restaurant menus and transit passes.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PROJECT METHODOLOGY SECTION -->
+        <section id="methodology" class="content-section">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-diagram-project"></i> Project Methodology</h2>
+                <p>Step-by-step execution framework</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="step-num">1</div>
+                    <div class="step-content"><h4>Topic Selection</h4><p>Identifying QR security as a critical community safety challenge.</p></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="step-num">2</div>
+                    <div class="step-content"><h4>Research & Risk Analysis</h4><p>Studying quishing vectors, fake merchant stickers, and payment fraud trends.</p></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="step-num">3</div>
+                    <div class="step-content"><h4>Content Preparation</h4><p>Drafting simple, non-technical educational modules and safety guidelines.</p></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="step-num">4</div>
+                    <div class="step-content"><h4>Website Development</h4><p>Building a lightweight, mobile-first Android app style web platform using HTML5, CSS3, and Vanilla JS.</p></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="step-num">5</div>
+                    <div class="step-content"><h4>Awareness Material</h4><p>Designing digital posters, checklists, and quiz frameworks.</p></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="step-num">6</div>
+                    <div class="step-content"><h4>Community Activity</h4><p>Conducting interactive awareness sessions and demonstrations.</p></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="step-num">7</div>
+                    <div class="step-content"><h4>Survey & Feedback</h4><p>Gathering before and after awareness responses from participants.</p></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="step-num">8</div>
+                    <div class="step-content"><h4>Data Analysis & Documentation</h4><p>Compiling metrics and finalizing the project report (Black Book).</p></div>
+                </div>
             </div>
         </section>
 
@@ -90,7 +208,7 @@
 
             <div class="card">
                 <h3>Definition & Function</h3>
-                <p>A **QR code (Quick Response code)** is a type of two-dimensional matrix barcode that can be read easily by digital devices like smartphones. It stores information as a series of pixels in a square grid.</p>
+                <p>A <strong>QR code (Quick Response code)</strong> is a type of two-dimensional matrix barcode that can be read easily by digital devices like smartphones. It stores information as a series of pixels in a square grid.</p>
             </div>
 
             <div class="card">
@@ -151,7 +269,7 @@
                 <h3><span class="badge-num">C</span> Fake Payment & Reward QRs</h3>
                 <p><strong>What it is:</strong> Scammers send messages saying "You have won cashback/reward! Scan here to receive money."</p>
                 <p><strong>How it works:</strong> When you scan and enter your UPI PIN under the pretense of "receiving" money, funds are debited from your account.</p>
-                <div class="action-box"><span>Action:</span> Remember: **You never need to enter a UPI PIN to RECEIVE money.**</div>
+                <div class="action-box"><span>Action:</span> Remember: <strong>You never need to enter a UPI PIN to RECEIVE money.</strong></div>
             </div>
 
             <div class="scam-card">
@@ -195,31 +313,19 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="step-num">1</div>
-                    <div class="step-content">
-                        <h4>Check the Source</h4>
-                        <p>Where did this QR code come from? Is it from a trusted entity?</p>
-                    </div>
+                    <div class="step-content"><h4>Check the Source</h4><p>Where did this QR code come from? Is it from a trusted entity?</p></div>
                 </div>
                 <div class="timeline-item">
                     <div class="step-num">2</div>
-                    <div class="step-content">
-                        <h4>Inspect Physical Codes</h4>
-                        <p>Look for pasted stickers or physical tampering on merchant stands.</p>
-                    </div>
+                    <div class="step-content"><h4>Inspect Physical Codes</h4><p>Look for pasted stickers or physical tampering on merchant stands.</p></div>
                 </div>
                 <div class="timeline-item">
                     <div class="step-num">3</div>
-                    <div class="step-content">
-                        <h4>Preview the URL</h4>
-                        <p>Use QR scanners that display destination URLs before automatically opening them.</p>
-                    </div>
+                    <div class="step-content"><h4>Preview the URL</h4><p>Use QR scanners that display destination URLs before automatically opening them.</p></div>
                 </div>
                 <div class="timeline-item">
                     <div class="step-num">4</div>
-                    <div class="step-content">
-                        <h4>Verify Recipient & Amount</h4>
-                        <p>Double-check payment screens before entering any confidential PIN.</p>
-                    </div>
+                    <div class="step-content"><h4>Verify Recipient & Amount</h4><p>Double-check payment screens before entering any confidential PIN.</p></div>
                 </div>
             </div>
         </section>
@@ -324,107 +430,79 @@
             </div>
         </section>
 
-        <!-- 11. COMMUNITY PROJECT SECTION -->
+        <!-- 11. COMMUNITY PROJECT DETAILS SECTION -->
         <section id="community" class="content-section">
             <div class="section-title">
-                <h2><i class="fa-solid fa-users-rectangle"></i> Community Project</h2>
+                <h2><i class="fa-solid fa-users-rectangle"></i> Community Engagement Project</h2>
                 <p>TY B.Sc. Information Technology (Semester 5)</p>
             </div>
 
             <div class="card">
-                <h3>Project Overview</h3>
+                <h3>Project Information</h3>
                 <p><strong>Project Title:</strong> QR Code Awareness and Safe QR Usage</p>
-                <p><strong>Project Type:</strong> Community Engagement Project (CEP)</p>
                 <p><strong>Course:</strong> TY B.Sc. Information Technology</p>
                 <p><strong>Semester:</strong> 5th Semester</p>
+                <p><strong>Project Type:</strong> Community Engagement Project (CEP)</p>
                 <p><strong>Academic Year:</strong> 2026–2027</p>
-                <p><strong>Purpose:</strong> To create awareness among college students and community members regarding secure QR code practices, prevention of quishing, and digital-payment fraud mitigation.</p>
+                <p><strong>Core Objective:</strong> To create awareness among students and community members regarding secure QR-code usage, payment safety, and digital fraud prevention.</p>
                 
                 <div class="project-meta">
                     <p style="font-size: 0.75rem; color: var(--text-muted); font-style: italic;">
-                        <i class="fa-solid fa-shield-halved"></i> <strong>Privacy Notice:</strong> In compliance with data privacy standards, student personal details, roll numbers, college names, and faculty guide names are intentionally omitted from public display and are reserved strictly for official Black Book documentation and college submissions.
+                        <i class="fa-solid fa-shield-halved"></i> <strong>Privacy Notice:</strong> In compliance with data privacy standards, student personal details, roll numbers, college names, and faculty guide names are omitted from public display and reserved strictly for official Black Book documentation and college submissions.
                     </p>
                 </div>
             </div>
 
+            <!-- COMMUNITY AWARENESS ACTIVITY LOG -->
             <div class="card">
-                <h3>Project Activity Gallery & Logs</h3>
-                <p>Documentation of awareness sessions, poster presentations, and community interactions.</p>
-                <div class="gallery-placeholder">
+                <h3>Community Awareness Activity Log</h3>
+                <p>Details of field awareness drives and sessions conducted.</p>
+                <div class="activity-editable-box" style="background: var(--bg-color); border: 1px dashed var(--border-color); padding: 14px; border-radius: 12px; margin-top: 10px;">
+                    <p><strong>Activity Date:</strong> <span class="editable-placeholder">[ Enter Date Here ]</span></p>
+                    <p><strong>Location:</strong> <span class="editable-placeholder">[ Enter Location Here ]</span></p>
+                    <p><strong>Target Audience:</strong> <span class="editable-placeholder">[ e.g., Students / Senior Citizens / Shop Owners ]</span></p>
+                    <p><strong>Participants Count:</strong> <span class="editable-placeholder">[ Enter Number ]</span></p>
+                    <p><strong>Activity Conducted:</strong> <span class="editable-placeholder">[ e.g., Poster Presentation & Safe QR Demonstration ]</span></p>
+                    <p><strong>Topics Covered:</strong> <span class="editable-placeholder">[ e.g., UPI safety, Quishing, Scam identification ]</span></p>
+                    <p><strong>Observations:</strong> <span class="editable-placeholder">[ Enter field observations ]</span></p>
+                </div>
+                <div class="gallery-placeholder" style="margin-top: 12px;">
                     <i class="fa-solid fa-image"></i>
                     <p>Activity photographs placeholder (Insert actual photos from community drive here)</p>
                 </div>
             </div>
-        </section>
 
-        <!-- 12. RESOURCES SECTION -->
-        <section id="resources" class="content-section">
-            <div class="section-title">
-                <h2><i class="fa-solid fa-book-bookmark"></i> Resources & References</h2>
-                <p>Official cyber safety references</p>
-            </div>
-
+            <!-- COMMUNITY AWARENESS SURVEY & DATA ANALYSIS -->
             <div class="card">
-                <ul class="bullet-list">
-                    <li><i class="fa-solid fa-shield"></i> National Cyber Crime Reporting Portal (India): <a href="https://www.cybercrime.gov.in" target="_blank" rel="noopener">cybercrime.gov.in</a></li>
-                    <li><i class="fa-solid fa-phone"></i> National Cyber Crime Helpline: <strong>1930</strong></li>
-                    <li><i class="fa-solid fa-landmark"></i> Reserve Bank of India (RBI) - "Be Aware" Digital Fraud Awareness campaigns.</li>
+                <h3>Community Awareness Survey & Data Analysis</h3>
+                <p>Measuring community awareness levels before and after educational sessions across key categories:</p>
+                <ul class="bullet-list" style="margin-top: 8px;">
+                    <li><i class="fa-solid fa-circle-check"></i> General QR code usage comfort</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Scam & Quishing awareness</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Safe payment verification habits</li>
+                    <li><i class="fa-solid fa-circle-check"></i> OTP / UPI PIN confidentiality awareness</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Destination URL verification capability</li>
                 </ul>
-            </div>
-        </section>
-
-        <!-- 13. HELP / EMERGENCY GUIDANCE SECTION -->
-        <section id="help" class="content-section">
-            <div class="section-title">
-                <h2><i class="fa-solid fa-kit-medical"></i> Emergency Guidance</h2>
-                <p>What to do if you encounter a fraudulent QR scam</p>
+                <div class="survey-status-box" style="background: rgba(37, 99, 235, 0.08); border-left: 3px solid var(--primary); padding: 12px; border-radius: 0 8px 8px 0; margin-top: 12px; font-size: 0.8rem;">
+                    <p>📊 <strong>Survey Results Status:</strong> Survey results, comparative percentage tables, and pre/post awareness graphs will be updated here after actual community data collection.</p>
+                </div>
             </div>
 
-            <div class="card alert-card">
-                <h3>Immediate Steps if Scammed</h3>
-                <ol class="numbered-list">
-                    <li><strong>Stop Interaction:</strong> Close any malicious browser tabs or payment apps immediately.</li>
-                    <li><strong>Contact Bank / Wallet:</strong> Call your bank's official helpline to block UPI IDs, cards, or accounts immediately.</li>
-                    <li><strong>Report Cybercrime:</strong> File a formal complaint at <a href="https://www.cybercrime.gov.in" target="_blank" rel="noopener">cybercrime.gov.in</a> or call <strong>1930</strong>.</li>
-                    <li><strong>Preserve Evidence:</strong> Take screenshots of transaction IDs, messages, and QR codes encountered.</li>
-                </ol>
+            <!-- PROJECT IMPACT -->
+            <div class="card">
+                <h3>Project Impact Analysis</h3>
+                <div style="margin-bottom: 12px;">
+                    <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--primary); margin-bottom: 4px;">Expected Impact:</h4>
+                    <p style="font-size: 0.82rem;">Enhanced digital vigilance, reduced susceptibility to QR scams, improved payment verification habits, and promotion of responsible digital behavior among community members.</p>
+                </div>
+                <div>
+                    <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--primary); margin-bottom: 4px;">Actual Observed Impact:</h4>
+                    <p style="font-size: 0.82rem; font-style: color: var(--text-muted);">[ Edit or update with actual feedback and metrics observed post community activity ]</p>
+                </div>
             </div>
-        </section>
 
-    </main>
-
-    <!-- Android App Style Bottom Navigation Bar -->
-    <nav class="app-bottom-nav">
-        <button class="nav-item active" onclick="switchSection('home')">
-            <i class="fa-solid fa-house"></i>
-            <span>Home</span>
-        </button>
-        <button class="nav-item" onclick="switchSection('scams')">
-            <i class="fa-solid fa-bug-slash"></i>
-            <span>Scams</span>
-        </button>
-        <button class="nav-item" onclick="switchSection('verify')">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <span>Verify</span>
-        </button>
-        <button class="nav-item" onclick="switchSection('quiz')">
-            <i class="fa-solid fa-brain"></i>
-            <span>Quiz</span>
-        </button>
-        <button class="nav-item" onclick="switchSection('community')">
-            <i class="fa-solid fa-users"></i>
-            <span>Project</span>
-        </button>
-    </nav>
-
-    <!-- Footer -->
-    <footer class="app-footer">
-        <p><strong>QR Code Awareness and Safe QR Usage</strong></p>
-        <p>TY B.Sc. Information Technology (Semester 5) - CEP</p>
-        <p class="disclaimer">Educational purpose website designed for community awareness. Privacy protected.</p>
-    </footer>
-
-    <!-- Custom JavaScript -->
-    <script src="js/script.js"></script>
-</body>
-</html>
+            <!-- STUDENT LEARNING OUTCOMES -->
+            <div class="card">
+                <h3>Student Learning Outcomes (TY B.Sc. IT)</h3>
+                <div class="chip-list">
+                    <span>HTML5/CSS3/JS Web Dev
