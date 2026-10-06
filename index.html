@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Awareness & Safe QR Usage | TY B.Sc. IT CEP</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Android App Style Top Bar -->
+    <header class="app-topbar">
+        <div class="topbar-brand">
+            <i class="fa-solid fa-qrcode app-logo-icon"></i>
+            <div>
+                <h1>QR Safe</h1>
+                <p>TY B.Sc. IT Community Project</p>
+            </div>
+        </div>
+        <div class="topbar-actions">
+            <button id="theme-toggle" aria-label="Toggle Dark Mode"><i class="fa-solid fa-moon"></i></button>
+        </div>
+    </header>
+
+    <!-- Main Content Container (Mobile App Frame Style) -->
+    <main class="app-container">
+
+        <!-- 1. HOME SECTION -->
+        <section id="home" class="content-section active">
+            <div class="hero-card">
+                <div class="hero-badge"><i class="fa-solid fa-shield-halved"></i> CEP Initiative</div>
+                <h2>Scan Smart. Pay Safe.</h2>
+                <p>Learn how to identify suspicious QR codes, avoid QR scams and make safer digital payments.</p>
+                
+                <div class="safety-banner">
+                    <h3><i class="fa-solid fa-triangle-exclamation"></i> STOP → CHECK → VERIFY → THEN SCAN / PAY</h3>
+                </div>
+
+                <div class="hero-quick-tips">
+                    <div class="tip-pill"><i class="fa-solid fa-check"></i> Check the source</div>
+                    <div class="tip-pill"><i class="fa-solid fa-check"></i> Inspect stickers</div>
+                    <div class="tip-pill"><i class="fa-solid fa-check"></i> Verify amount</div>
+                </div>
+            </div>
+
+            <div class="section-heading">
+                <h3>Quick Navigation</h3>
+                <p>Explore the awareness modules</p>
+            </div>
+
+            <div class="quick-grid">
+                <button class="nav-card" onclick="switchSection('basics')">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>QR Basics</span>
+                </button>
+                <button class="nav-card" onclick="switchSection('scams')">
+                    <i class="fa-solid fa-bug-slash"></i>
+                    <span>QR Scams</span>
+                </button>
+                <button class="nav-card" onclick="switchSection('payments')">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>Safe Payments</span>
+                </button>
+                <button class="nav-card" onclick="switchSection('verify')">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <span>Verify QR</span>
+                </button>
+                <button class="nav-card" onclick="switchSection('warnings')">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <span>Warning Signs</span>
+                </button>
+                <button class="nav-card" onclick="switchSection('quiz')">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>Safety Quiz</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- 2. QR BASICS SECTION -->
+        <section id="basics" class="content-section">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-book-open"></i> What is a QR Code?</h2>
+                <p>Understanding Quick Response codes from scratch</p>
+            </div>
+
+            <div class="card">
+                <h3>Definition & Function</h3>
+                <p>A **QR code (Quick Response code)** is a type of two-dimensional matrix barcode that can be read easily by digital devices like smartphones. It stores information as a series of pixels in a square grid.</p>
+            </div>
+
+            <div class="card">
+                <h3>Where Are They Used?</h3>
+                <ul class="bullet-list">
+                    <li><i class="fa-solid fa-check-circle"></i> <strong>Digital Payments:</strong> UPI, wallet transfers at retail shops.</li>
+                    <li><i class="fa-solid fa-check-circle"></i> <strong>Websites:</strong> Directing users to web links without typing URLs.</li>
+                    <li><i class="fa-solid fa-check-circle"></i> <strong>Restaurant Menus:</strong> Digital menu viewing.</li>
+                    <li><i class="fa-solid fa-check-circle"></i> <strong>Tickets & Passes:</strong> Boarding passes, event access.</li>
+                    <li><i class="fa-solid fa-check-circle"></i> <strong>Product Info:</strong> Tracking ingredients, manuals, and authenticity.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 3. WHY QR SAFETY MATTERS SECTION -->
+        <section id="safety-matters" class="content-section">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-shield-dog"></i> Why QR Safety Matters</h2>
+                <p>Never trust a QR code blindly</p>
+            </div>
+            <div class="card alert-card">
+                <h3><i class="fa-solid import-icon fa-triangle-exclamation"></i> The Hidden Risk</h3>
+                <p>A QR code itself is just an image containing data (usually a link). Your phone cannot tell if that link leads to a safe website or a malicious scam page before opening it. Attackers exploit this blind trust.</p>
+            </div>
+            <div class="card">
+                <h3>Where Can a Malicious QR Take You?</h3>
+                <div class="chip-list">
+                    <span>Phishing Web Pages</span>
+                    <span>Fake Payment Portals</span>
+                    <span>Malware Downloads</span>
+                    <span>Fraudulent UPI Flows</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. COMMON QR SCAMS SECTION -->
+        <section id="scams" class="content-section">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-bug-slash"></i> Common QR Scams</h2>
+                <p>Recognize fraudulent tactics used by cyber criminals</p>
+            </div>
+
+            <div class="scam-card">
+                <h3><span class="badge-num">A</span> Fake QR Codes & Tampering</h3>
+                <p><strong>What it is:</strong> Attackers paste malicious QR stickers over genuine merchant payment codes at stores.</p>
+                <p><strong>How it works:</strong> You scan to pay the shopkeeper, but the money goes directly to the scammer's account.</p>
+                <div class="action-box"><span>Action:</span> Always confirm the store owner's name on your payment app before entering the UPI PIN.</div>
+            </div>
+
+            <div class="scam-card">
+                <h3><span class="badge-num">B</span> QR Phishing (Quishing)</h3>
+                <p><strong>What it is:</strong> Phishing emails or messages containing QR codes instead of regular web links to bypass email security filters.</p>
+                <p><strong>How it works:</strong> Scammers claim your bank account or utility service is blocked and ask you to scan the QR to verify details.</p>
+                <div class="action-box"><span>Action:</span> Never scan QR codes sent via unexpected emails, texts, or social media messages.</div>
+            </div>
+
+            <div class="scam-card">
+                <h3><span class="badge-num">C</span> Fake Payment & Reward QRs</h3>
+                <p><strong>What it is:</strong> Scammers send messages saying "You have won cashback/reward! Scan here to receive money."</p>
+                <p><strong>How it works:</strong> When you scan and enter your UPI PIN under the pretense of "receiving" money, funds are debited from your account.</p>
+                <div class="action-box"><span>Action:</span> Remember: **You never need to enter a UPI PIN to RECEIVE money.**</div>
+            </div>
+
+            <div class="scam-card">
+                <h3><span class="badge-num">D</span> Fake Donation & Event QRs</h3>
+                <p><strong>What it is:</strong> Fraudulent disaster relief, charity, or event registration drives using counterfeit QR codes.</p>
+                <p><strong>How it works:</strong> Exploiting emotions or urgency to collect unauthorized funds.</p>
+                <div class="action-box"><span>Action:</span> Verify official charity channels and domain names before donating.</div>
+            </div>
+        </section>
+
+        <!-- 5. SAFE QR PAYMENTS SECTION -->
+        <section id="payments" class="content-section">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-wallet"></i> Safe QR Payments</h2>
+                <p>Best practices for UPI and digital wallets</p>
+            </div>
+
+            <div class="card highlight-box">
+                <h3><i class="fa-solid fa-circle-exclamation"></i> Golden Rule of UPI</h3>
+                <p><strong>A UPI PIN is ONLY used to send money.</strong> You never need a PIN, password, or OTP to receive money from anyone.</p>
+            </div>
+
+            <div class="card">
+                <h3>Payment Verification Checklist</h3>
+                <ul class="bullet-list">
+                    <li><i class="fa-solid fa-circle-check"></i> Verify the recipient name matches the merchant or person.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Check that the payment amount is correct.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Use only authorized, trusted banking and payment applications.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Review transaction summary screens before clicking confirmation.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 6. VERIFY BEFORE YOU TRUST SECTION -->
+        <section id="verify" class="content-section">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-magnifying-glass-chart"></i> Verify Before You Trust</h2>
+                <p>Step-by-step verification guide</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="step-num">1</div>
+                    <div class="step-content">
+                        <h4>Check the Source</h4>
+                        <p>Where did this QR code come from? Is it from a trusted entity?</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="step-num">2</div>
+                    <div class="step-content">
+                        <h4>Inspect Physical Codes</h4>
+                        <p>Look for pasted stickers or physical tampering on merchant stands.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="step-num">3</div>
+                    <div class="step-content">
+                        <h4>Preview the URL</h4>
+                        <p>Use QR scanners that display destination URLs before automatically opening them.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="step-num">4</div>
+                    <div class="step-content">
+                        <h4>Verify Recipient & Amount</h4>
+                        <p>Double-check payment screens before entering any confidential PIN.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. WARNING SIGNS SECTION -->
+        <section id="warnings" class="content-section">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-triangle-exclamation"></i> Warning Signs</h2>
+                <p>Red flags to watch out for</p>
+            </div>
+
+            <div class="warning-grid">
+                <div class="warning-card"><i class="fa-solid fa-bolt"></i> Urgent payment requests with threats</div>
+                <div class="warning-card"><i class="fa-solid fa-gift"></i> "You won a cash prize / lottery" claims</div>
+                <div class="warning-card"><i class="fa-solid fa-link-slash"></i> Misspelled website domains in URL preview</div>
+                <div class="warning-card"><i class="fa-solid fa-note-sticky"></i> QR stickers placed on top of original shop stands</div>
+                <div class="warning-card"><i class="fa-solid fa-key"></i> Requests for OTP, UPI PIN, or bank passwords</div>
+                <div class="warning-card"><i class="fa-solid fa-download"></i> Prompting to install unknown remote-access apps</div>
+            </div>
+        </section>
+
+        <!-- 8. DOS AND DONTS SECTION -->
+        <section id="dos-donts" class="content-section">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-list-check"></i> Do's & Don'ts</h2>
+                <p>Quick habits for secure digital engagement</p>
+            </div>
+
+            <div class="dos-donts-container">
+                <div class="box do-box">
+                    <h3><i class="fa-solid fa-circle-check"></i> DO's</h3>
+                    <ul>
+                        <li>Verify QR code source</li>
+                        <li>Check recipient name & amount</li>
+                        <li>Inspect physical QR stickers</li>
+                        <li>Use trusted payment apps</li>
+                        <li>Keep your OS and apps updated</li>
+                    </ul>
+                </div>
+                <div class="box dont-box">
+                    <h3><i class="fa-solid fa-circle-xmark"></i> DON'Ts</h3>
+                    <ul>
+                        <li>Scan unknown QR codes blindly</li>
+                        <li>Share OTP, UPI PIN, or passwords</li>
+                        <li>Trust unexpected prize/cashback QR offers</li>
+                        <li>Install apps from unverified links</li>
+                        <li>Ignore suspicious URL redirects</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. REAL LIFE SCENARIOS SECTION -->
+        <section id="scenarios" class="content-section">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-masks-theater"></i> Real-Life Scenarios</h2>
+                <p>Common situations and correct responses</p>
+            </div>
+
+            <div class="scenario-card">
+                <h3>Scenario 1: The Tampered Shop QR</h3>
+                <p><strong>Situation:</strong> You visit a local tea stall and scan the payment QR sticker pasted on the counter.</p>
+                <p><strong>Risk:</strong> Money goes to a fraudster's account instead of the vendor.</p>
+                <p><strong>Warning Sign:</strong> The sticker feels like paper pasted over a plastic stand, or the name on the payment app doesn't match the shop owner.</p>
+                <div class="action-box"><strong>Correct Action:</strong> Ask the vendor to confirm their name or use their verified phone number.</div>
+            </div>
+
+            <div class="scenario-card">
+                <h3>Scenario 2: The Courier Scam Message</h3>
+                <p><strong>Situation:</strong> You receive an SMS: "Your parcel couldn't be delivered. Scan QR to pay ₹10 re-delivery fee."</p>
+                <p><strong>Risk:</strong> Phishing site theft of banking details.</p>
+                <p><strong>Warning Sign:</strong> Unsolicited message from an unknown number with a short-link QR.</p>
+                <div class="action-box"><strong>Correct Action:</strong> Delete the message immediately and check tracking directly on the official courier app.</div>
+            </div>
+        </section>
+
+        <!-- 10. INTERACTIVE SAFETY QUIZ SECTION -->
+        <section id="quiz" class="content-section">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-brain"></i> Interactive Safety Quiz</h2>
+                <p>Test your knowledge on QR security</p>
+            </div>
+
+            <div id="quiz-container" class="quiz-box">
+                <div id="quiz-start-screen">
+                    <p>Test how well you can spot QR scams and stay safe online! Contains 8 practical questions.</p>
+                    <button class="btn-primary" onclick="startQuiz()">Start Quiz</button>
+                </div>
+                <div id="quiz-question-screen" class="hidden">
+                    <div class="quiz-progress"><span id="current-q">1</span> of <span id="total-q">8</span></div>
+                    <h3 id="question-text">Question text goes here...</h3>
+                    <div id="options-container" class="options-grid"></div>
+                    <div id="quiz-feedback" class="hidden"></div>
+                    <button id="next-btn" class="btn-primary hidden" onclick="nextQuestion()">Next Question</button>
+                </div>
+                <div id="quiz-result-screen" class="hidden">
+                    <h3>Quiz Completed!</h3>
+                    <p>Your Score: <span id="final-score">0</span> / 8</p>
+                    <p id="quiz-performance-msg"></p>
+                    <button class="btn-primary" onclick="restartQuiz()">Restart Quiz</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. COMMUNITY PROJECT SECTION -->
+        <section id="community" class="content-section">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-users-rectangle"></i> Community Project</h2>
+                <p>TY B.Sc. Information Technology CEP</p>
+            </div>
+
+            <div class="card">
+                <h3>Project Overview</h3>
+                <p><strong>Project Title:</strong> QR Code Awareness and Safe QR Usage</p>
+                <p><strong>Purpose:</strong> To educate college students and community members regarding secure QR code practices, prevention of quishing, and digital-payment fraud mitigation.</p>
+                
+                <div class="project-meta">
+                    <p><strong>Student Name:</strong> [Your Name Here]</p>
+                    <p><strong>Class:</strong> TY B.Sc. IT (Semester VI)</p>
+                    <p><strong>College Name:</strong> [Your College Name]</p>
+                    <p><strong>Department:</strong> Department of Information Technology</p>
+                    <p><strong>Academic Year:</strong> 2025 - 2026</p>
+                    <p><strong>Project Guide:</strong> [Guide Name Here]</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Project Activity Gallery & Logs</h3>
+                <p>Documentation of awareness sessions, poster presentations, and community interactions.</p>
+                <div class="gallery-placeholder">
+                    <i class="fa-solid fa-image"></i>
+                    <p>Activity photographs placeholder (Insert actual photos from community drive here)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 12. RESOURCES SECTION -->
+        <section id="resources" class="content-section">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-book-bookmark"></i> Resources & References</h2>
+                <p>Official cyber safety references</p>
+            </div>
+
+            <div class="card">
+                <ul class="bullet-list">
+                    <li><i class="fa-solid fa-shield"></i> National Cyber Crime Reporting Portal (India): <a href="https://www.cybercrime.gov.in" target="_blank" rel="noopener">cybercrime.gov.in</a></li>
+                    <li><i class="fa-solid fa-phone"></i> National Cyber Crime Helpline: <strong>1930</strong></li>
+                    <li><i class="fa-solid fa-landmark"></i> Reserve Bank of India (RBI) - "Be Aware" Digital Fraud Awareness campaigns.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 13. HELP / EMERGENCY GUIDANCE SECTION -->
+        <section id="help" class="content-section">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-kit-medical"></i> Emergency Guidance</h2>
+                <p>What to do if you encounter a fraudulent QR scam</p>
+            </div>
+
+            <div class="card alert-card">
+                <h3>Immediate Steps if Scammed</h3>
+                <ol class="numbered-list">
+                    <li><strong>Stop Interaction:</strong> Close any malicious browser tabs or payment apps immediately.</li>
+                    <li><strong>Contact Bank / Wallet:</strong> Call your bank's official helpline to block UPI IDs, cards, or accounts immediately.</li>
+                    <li><strong>Report Cybercrime:</strong> File a formal complaint at <a href="https://www.cybercrime.gov.in" target="_blank" rel="noopener">cybercrime.gov.in</a> or call <strong>1930</strong>.</li>
+                    <li><strong>Preserve Evidence:</strong> Take screenshots of transaction IDs, messages, and QR codes encountered.</li>
+                </ol>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Android App Style Bottom Navigation Bar -->
+    <nav class="app-bottom-nav">
+        <button class="nav-item active" onclick="switchSection('home')">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+        </button>
+        <button class="nav-item" onclick="switchSection('scams')">
+            <i class="fa-solid fa-bug-slash"></i>
+            <span>Scams</span>
+        </button>
+        <button class="nav-item" onclick="switchSection('verify')">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Verify</span>
+        </button>
+        <button class="nav-item" onclick="switchSection('quiz')">
+            <i class="fa-solid fa-brain"></i>
+            <span>Quiz</span>
+        </button>
+        <button class="nav-item" onclick="switchSection('community')">
+            <i class="fa-solid fa-users"></i>
+            <span>Project</span>
+        </button>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+        <p><strong>QR Code Awareness and Safe QR Usage</strong></p>
+        <p>TY B.Sc. Information Technology Community Engagement Project</p>
+        <p class="disclaimer">Educational purpose website designed for community awareness. Non-commercial.</p>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
